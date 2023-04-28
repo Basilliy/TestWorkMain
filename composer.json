@@ -1,0 +1,33 @@
+{
+    "name": "test/project",
+    "type": "project",
+    "description": "The test project for banner.",
+    "require": {
+        "php": "^8.1",
+        "illuminate/database": "^10.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "controllers/",
+            "Route\\": "route/",
+            "Helpers\\": "helpers/"
+        },
+        "classmap": [
+            "models"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Controllers\\": "controllers/",
+            "Route\\": "route/"
+        }
+    },
+
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
